@@ -1,0 +1,21 @@
+{
+  "name": "32014-website",
+  "version": "1.0.0",
+  "description": "official website for the game 32014 available on all platforms!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MasterMind",
+    "32014",
+    "162007",
+    "CarnageGame"
+  ],
+  "author": "MasterMind",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta charset="utf-8">
+
+  <title>32014</title>
+
+  <meta name="description" content="32014 description">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/css/normal.css">
+
+  <link rel="stylesheet" href="/css/base.css">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="icon" type="image/png" href="src/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+<body onscroll="scroll()">
+
+
+
+  <div id="banner" class="wrapper">
+
+    <h1 class="the32014-logo">32014</h1>
+
+    <img src="/src/logo.png" alt="32014 key art" id="key-art">
+
+    <p class="description"> 32014 is an MMORPG game where you upgrade your weapons, level your base and raid your enemies. 32014 provides multiple gamemodes such as T-REX runner, Soul </p>
+
+  </div>
+  <div class="wrapper">
+    <img src="/src/LEGEND.png" alt="LEGEND" class="smol" id="LEGEND">
+    <img src="/src/atrav_gaming.png" alt="atrav_gaming" class="smol" id="atrav-gaming" style="overflow-anchor: none;">
+    <img src="/src/deadtimes.png" alt="deadtimes" class="smol" id="deadtimes">
+  </div>
+
+  <br><br>
+  
+  <div class="restofthefuckingpage">
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DZptvYEvrPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  </div>
+
+<br><br>
+    <div class="downloads-section">
+    <a class="download-stores"  href='https://play.google.com/store/apps/details?id=com.atrevborgir.threetwozeroonefour&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img id="hundredpx" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+    <a class="download-stores" style="height: 90px; margin-top: 18px;" href="https://162007.itch.io/32014">
+      <img src="https://get.microsoft.com/images/en-GB%20dark.svg"/>
+    </a>
+  </div>
+
+  <div class="about">
+    <p>Includes story, minigames, and atrev borgirs.
+
+      You play a character named "Atrav." Adventure through a world full of enemies & DANGER. Meet and befriend the allies that you'll encounter throughout the journey. Beware of the bosses which you will have to fight!
+      
+      As players progress through the levels of 32014, they are transported to a variety of exciting locations, each with its own unique challenges and gameplay elements. From fast-paced action stages to puzzle-solving quests, 32014 offers a wide range of gameplay experiences for players to enjoy.
+      
+      Overall, 32014 is an exciting and action-packed game that follows the thrilling adventures of Atrav as he fights to save the world from danger.
+      
+      <a href="https://162007.itch.io/32014" target="_blank"> Try out the demo on the browser! </a>
+      
+      Get the completed version on the Play Store or Windows.</p>
+      <img src="/src/angrynuts.png" alt="angrynuts" class="smol" id="angrynuts">
+  </div>
+
+  <h2>Screenshots</h2>
+  <div class="screenshots">
+    <img src="/src/s1.png" alt="s1" class="screenshot">
+    <img src="/src/s2.png" alt="s2" class="screenshot">
+    <img src="/src/s3.png" alt="s3" class="screenshot">
+    <img src="/src/s4.png" alt="s4" class="screenshot">
+    <img src="/src/s5.png" alt="s5" class="screenshot">
+    <img src="/src/s6.png" alt="s6" class="screenshot">
+    <img src="/src/s7.png" alt="s7" class="screenshot">
+    <img src="/src/s8.png" alt="s8" class="screenshot">
+    <img src="/src/s9.png" alt="s9" class="screenshot">
+  </div>
+
+
+  <div id="background"  style="filter: hue-rotate(0deg);">
+
+    <div class="particles " ></div>
+    <div class="particles "></div>
+
+  </div>
+
+
+
+  <div id="footer" class="distressed-top">
+
+    <div class=" wrapper-footer" class="inline-container">
+
+       &copy2023 Website created by <a class="same-colour-as-bg" href="https://memastermind.github.io" style="filter: hue-rotate(0deg);">MasterMind  </a><img src="https://cdn.discordapp.com/emojis/1007762883884625920?size=20" class="inline-img" style="margin-top: 5px;"/>
+
+    </div>
+
+  </div>
+
+
+<!-- End Document
+
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<script>
+
+  body = document.getElementsByTagName('body')[0],
+
+  bg = document.getElementById('background');
+
+  classes = document.getElementsByClassName('same-colour-as-bg');
+
+  // function scroll() {
+  //   var newColor = window.scrollY/25;
+
+  //   bg.style.webkitFilter = "hue-rotate(" + newColor + "deg)";
+
+  //   for (i = 0; i < classes.length; i++) {
+
+  //       classes[i].style.webkitFilter = "hue-rotate(" + newColor + "deg)";
+
+  //   }
+
+  // }
+  const leyen = document.getElementById('LEGEND');
+  const atrav = document.getElementById('atrav-gaming');  
+
+  width = screen.width;
+  if(width <= 1000 || innerWidth <= 1000){
+    
+      leyen.addEventListener('mouseover', function() {
+        leyen.classList.add('animate-small-pc');
+    });
+    leyen.addEventListener('transitioned', function() {
+        leyen.classList.remove('animate-small-pc');
+    });
+
+      function checkCollision_small_pc(){
+        leyenpos = leyen.getBoundingClientRect()
+        atravLeft = atrav.getBoundingClientRect().left
+        atravRight = atrav.getBoundingClientRect().right
+        console.log(leyenpos.right + " " + atravLeft)
+        if (leyenpos.right >= (atravLeft)) {
+          atrav.classList.add('animateAtrav-small-pc');  
+        } 
+        
+        setTimeout(checkCollision_small_pc, 10);
+    }(checkCollision_small_pc());
+
+
+  }
+
+
+  else if(width <= 400){
+
+  }
+
+  else{
+
+
+    function checkCollision(){
+    leyenpos = leyen.getBoundingClientRect()
+    atravLeft = atrav.getBoundingClientRect().left
+    atravRight = atrav.getBoundingClientRect().right
+
+    if (leyenpos.right >= atravLeft) {
+      atrav.classList.add('animateAtrav');  
+    } 
+    
+    setTimeout(checkCollision, 10);
+  }(checkCollision());
+
+  leyen.addEventListener('mouseover', function() {
+    leyen.classList.add('animate');
+  });
+  leyen.addEventListener('transitioned', function() {
+    leyen.classList.remove('animate');
+  });
+
+}
+
+obj = document.getElementsByClassName("screenshot")
+for (var i = 0; i < obj.length; i++) {
+obj[i].addEventListener('click', function() {
+  window.open(this.src, '_blank');
+});
+}
+</script>
+
+
+
+
+</div>
+</body></html>

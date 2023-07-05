@@ -1,0 +1,416 @@
+
+
+html, body {
+  min-height: 100%;
+  overflow-x: hidden;
+
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.4em;
+    color:#fff;
+    line-height: 1.3;
+    position: relative;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.debug{
+    border: 1px solid red;
+}
+.wrapper {
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 6em 6em 2em;
+}
+
+.padding {
+    padding: 6em;
+    box-sizing: border-box;
+}
+
+#header {
+    line-height: 0.7;
+    padding: 1em 1em 0 1em;
+    vertical-align: top;
+    overflow: auto;
+}
+
+.fb-like, .twitter-follow-button {
+    float:left;
+    margin: 0 1em 1em 0;
+}
+
+.section {
+    background:#282828;
+}
+
+#background {
+    top:0;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color:#FF9900;
+}
+
+
+
+.particles {
+    width: 500%;
+    min-height: 100%;
+    background-image: url(/src/ParticleBackground.png);
+    background-size: 1024px; 
+    -webkit-animation: backgroundScroll 10s linear infinite;
+    animation: backgroundScroll 10s linear infinite;
+    position: fixed;
+}
+
+@keyframes backgroundScroll {
+    from {
+        -ms-transform: translate(0, 0); /* IE 9 */
+        -webkit-transform: translate(0, 0); /* Safari */
+        transform: translate(0, 0);
+    }
+    to {
+        -ms-transform: translate(-1024px, 0); /* IE 9 */
+        -webkit-transform: translate(-1024px, 0); /* Safari */
+        transform: translate(-1024px, 0);
+    }
+}
+
+
+#banner {
+    position: relative;
+}
+
+#key-art {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.description {
+    width: 40%;
+}
+
+.the32014-logo{
+    font-size:5em;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.press {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#footer {
+    background:#000;
+    font-size: 0.7em;
+    text-align: center;
+    padding: 1em;
+}
+
+#base {
+    overflow: auto;
+}
+
+
+#logos {
+    width: 60%;
+    float: left;
+}
+
+#logos div {
+    float: left;
+    display: block;
+    height: 65px;
+    text-indent: -9999px;
+    margin-right: 10%
+}
+
+#mc-embedded-subscribe {
+    width: 30%;
+    float: right;
+    margin-left: 5%;
+    padding: 0;
+}
+
+
+.distressed {
+  -webkit-mask-box-image: url("/src/WobblyLine.png") 10 0 10 repeat;
+   mask-border: url("/src/WobblyLine.png") 10 0 10 repeat;
+}
+
+.distressed-bottom {
+  -webkit-mask-box-image: url("/src/WobblyLineBottom.png") 0 0 10 repeat;
+   mask-border: url("/src/WobblyLineBottom.png") 0 0 10 repeat;
+}
+
+.distressed-top {
+  -webkit-mask-box-image: url("/src/WobblyLineTop.png") 10 0 0 repeat;
+   mask-border: url("/src/WobblyLineTop.png") 0 0 0 repeat;
+}
+
+
+
+
+@media (max-width: 900px) {
+    #key-art {
+        position: static;
+        max-width: 100%;
+        min-width: 60%;
+    }
+
+    #banner {
+        text-align: center;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    #header {
+        text-align: center;
+
+    }
+
+    .fb-like, .twitter-follow-button {
+        display: inline-block;
+        float: none;
+        margin-right: 1em;
+        vertical-align: top;
+    }
+
+    #logos {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    #logos div {
+        display: inline-block;
+        float: none;
+        margin: 0 2%;
+    }
+}
+
+.smol{
+    height: 80px;
+    width: auto;
+}
+
+@media (max-width:1000px){
+    #atrav-gaming{
+        transform: translate(550%, -50%);
+        transition: 0.5s ease;
+    }
+    #atrav-gaming:hover{
+        transform: translate(550%, -60%) scale(1.1);
+    }
+    #key-art{
+        bottom: 0 !important;
+    }
+}
+
+@media (min-width:1000px){
+    #atrav-gaming{
+        transform: translate(1100%, -50%);
+        transition: 0.5s ease;
+    }    
+    #atrav-gaming:hover{
+        transform: translate(1100%, -60%) scale(1.1);
+    }
+}
+
+
+
+#LEGEND{
+    transform: translate(200%);
+}
+
+@keyframes leyenrun {
+    0%{
+        transform: translate(200%);
+    }
+    100%{
+        transform: translate(1200%);
+    }
+}
+
+@keyframes atravSpin {
+    0%{
+        transform: translate(1100%, -50%);;
+    }
+    100%{
+        transform: translate(1400%, -75%) rotate(360deg);
+    }
+}
+
+@keyframes leyenrun-small-pc {
+    0%{
+        transform: translate(200%) ;
+    }
+    100%{
+        transform: translate(750%) ;
+    }
+}
+
+@keyframes atravSpin-small-pc {
+    0%{
+        transform: translate(550%, -50%);
+    }
+    100%{
+        transform: translate(1060%, -75%) rotate(360deg) ;
+    }
+}
+
+.animate{
+    animation: leyenrun 1s cubic-bezier(0.55, 0.06, 0.68, 0.19) forwards;
+}
+
+.animateAtrav{
+    animation: atravSpin 0.5s linear forwards;
+}
+
+.animate-small-pc{
+    animation: leyenrun-small-pc 1s cubic-bezier(0.55, 0.06, 0.68, 0.19) forwards;
+}
+
+.animateAtrav-small-pc{
+    animation: atravSpin-small-pc 0.5s linear forwards;
+}
+
+#deadtimes{
+    transform: translate(-200%);
+    transition: 0.5s ease;
+}
+#deadtimes:hover{
+    transform: translate(-200%, -15%);
+
+}
+
+h2{
+    margin: 69px 0 37px 39px;
+}
+
+.screenshots{
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.screenshot{
+    width: 48%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+
+}
+
+@media screen and (max-width: 1000px){
+    .screenshot{
+        width: 33.33%;
+        height: auto;
+        margin: 0 auto;
+        padding-bottom: 0px;
+        border-radius: 0px;
+        transition: 0.5s ease;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .screenshot{
+        width: 97%;
+        height: auto;
+        margin: 0 auto;
+        padding-bottom: 0px;
+        border-radius: 0px;
+    }
+}
+    
+
+.screenshot:hover{
+    cursor: pointer;
+}
+
+.inline-container{
+    display: inline-block;
+}
+.inline-img{
+    display: inline;
+}
+
+.video-container{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.downloads-section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.download-stores img{
+    height: 90px;
+}
+
+#hundredpx{
+    height: 130px !important;
+    width: auto;
+}
+
+.about {
+    font-size: 14px;
+    white-space: pre-line;
+    padding: 0 10%;
+}
+.restofthefuckingpage{
+    background-color: #764a079c;
+}
+
+#angrynuts{
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+}
+
+/* mobile styling */
+
+@media screen and (max-width: 500px) {
+    .the32014-logo{
+        font-size: 3.5em;
+    }
+    .wrapper{
+        padding: 4em 1em;
+    }
+}
+
+.wrapper-footer{
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 1em 0 1em;
+}
