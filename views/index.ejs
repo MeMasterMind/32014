@@ -5,7 +5,8 @@
 
   <title>32014</title>
 
-  <meta name="description" content="32014 description">
+  <meta name="description" content="32014 description :nerd:">
+  <meta name="theme-color" content="#FF9900" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -31,10 +32,10 @@
 
     <img src="/src/logo.png" alt="32014 key art" id="key-art">
 
-    <p class="description"> 32014 is an MMORPG game where you upgrade your weapons, level your base and raid your enemies. 32014 provides multiple gamemodes such as T-REX runner, Soul </p>
+    <p class="description"> 32014 description website under construction mf kys </p>
 
   </div>
-  <div class="wrapper">
+  <div class="wrapper" id="animation-container">
     <img src="/src/LEGEND.png" alt="LEGEND" class="smol" id="LEGEND">
     <img src="/src/atrav_gaming.png" alt="atrav_gaming" class="smol" id="atrav-gaming" style="overflow-anchor: none;">
     <img src="/src/deadtimes.png" alt="deadtimes" class="smol" id="deadtimes">
@@ -156,8 +157,9 @@
   }
 
 
-  else if(width <= 400){
-
+  else if((width || innerWidth) <= 400){
+    document.getElementById("animation-container").remove();
+    console.log("removed")
   }
 
   else{
