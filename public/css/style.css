@@ -210,11 +210,11 @@ a:hover {
 
 @media (max-width:1000px){
     #atrav-gaming{
-        transform: translate(550%, -50%);
+        transform: translate(400%, 0%);
         transition: 0.5s ease;
     }
     #atrav-gaming:hover{
-        transform: translate(550%, -60%) scale(1.1);
+        transform: translate(400%, -10%) scale(1.1);
     }
     #key-art{
         bottom: 0 !important;
@@ -223,11 +223,11 @@ a:hover {
 
 @media (min-width:1000px){
     #atrav-gaming{
-        transform: translate(1100%, -50%);
+        transform: translate(950%, 0%);
         transition: 0.5s ease;
     }    
     #atrav-gaming:hover{
-        transform: translate(1100%, -60%) scale(1.1);
+        transform: translate(950%, -10%) scale(1.1);
     }
 }
 
@@ -238,38 +238,29 @@ a:hover {
 }
 
 @keyframes leyenrun {
-    0%{
-        transform: translate(200%);
-    }
+
     100%{
-        transform: translate(1200%);
+        transform: translate(1050%);
     }
 }
 
 @keyframes atravSpin {
-    0%{
-        transform: translate(1100%, -50%);;
-    }
+
     100%{
-        transform: translate(1400%, -75%) rotate(360deg);
+        transform: translate(1250%, -25%) rotate(360deg);
     }
 }
 
 @keyframes leyenrun-small-pc {
-    0%{
-        transform: translate(200%) ;
-    }
     100%{
-        transform: translate(750%) ;
+        transform: translate(500%) ;
     }
 }
 
 @keyframes atravSpin-small-pc {
-    0%{
-        transform: translate(550%, -50%);
-    }
+
     100%{
-        transform: translate(1060%, -75%) rotate(360deg) ;
+        transform: translate(810%, -25%) rotate(360deg) ;
     }
 }
 
