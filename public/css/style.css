@@ -258,7 +258,6 @@ a:hover {
 }
 
 @keyframes atravSpin-small-pc {
-
     100%{
         transform: translate(810%, -25%) rotate(360deg) ;
     }
