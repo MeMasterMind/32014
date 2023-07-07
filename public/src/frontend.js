@@ -6,7 +6,7 @@ bg = document.getElementById('background');
 classes = document.getElementsByClassName('same-colour-as-bg');
 
 function scroll() {
-  var newColor = window.scrollY/5;
+  var newColor = window.scrollY/12;
 
   bg.style.webkitFilter = "hue-rotate(" + newColor + "deg)";
 

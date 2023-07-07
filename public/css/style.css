@@ -384,9 +384,20 @@ h2{
 
 #angrynuts{
     position: relative;
-    transform: translate(-50%);
-    left: 50%;
+    left: 16%;
 }
+#sprout{
+    position: relative;
+    right: 16%;
+}
+
+.sprout-pro-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 
 /* mobile styling */
 
@@ -403,10 +414,79 @@ h2{
     #animation-container{
         display: none;
     }
+    #sprout{
+        right: 0;
+    }
+    #angrynuts{
+        left: 0;
+    }
 }
 
 .wrapper-footer{
     max-width: 1200px;
     margin:0 auto;
     padding: 1em 0 1em;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+.discord-btn{
+    display: inline-block;
+    padding: 1.3125rem 0.875rem;
+    padding-left: 4.8125rem;
+    -webkit-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    background-position: center left 0.75rem;
+    background-color: #303030;
+    background-size: 3.5rem 3.5rem;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    line-height: 1.5;
+    background-image: url("https://cdn.cdnlogo.com/logos/d/43/discord.svg");
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.discord-btn-title{
+    display: block;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.discord-btn-subtitle{
+    display: block;
+    margin-bottom: -0.25rem;
+    color: #888;
+    font-size: 1.4rem;
+}
+
+.discord-btn:hover{
+    background-color: #f7f7f7;
+    text-decoration: none;
+}
+.discord-btn:hover > .discord-btn-title{
+   color: #232323
 }
