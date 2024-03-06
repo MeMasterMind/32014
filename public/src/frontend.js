@@ -34,7 +34,7 @@ if(width <= 1000 || innerWidth <= 1000){
       leyenpos = leyen.getBoundingClientRect()
       atravLeft = atrav.getBoundingClientRect().left
       atravRight = atrav.getBoundingClientRect().right
-      console.log(leyenpos.right + " " + atravLeft)
+      // console.log(leyenpos.right + " " + atravLeft)
       if (leyenpos.right >= (atravLeft)) {
         atrav.classList.add('animateAtrav-small-pc');  
       } 
@@ -48,7 +48,6 @@ if(width <= 1000 || innerWidth <= 1000){
 
 else if((width || innerWidth) <= 400){
   document.getElementById("animation-container").remove();
-  console.log("removed")
 }
 
 else{
