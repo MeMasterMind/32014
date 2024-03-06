@@ -2,7 +2,7 @@
   "name": "32014",
   "version": "1.0.0",
   "description": "Official website for the game 32014 available on all platforms!",
-  "main": "index.js",
+  "main": "api/index.js",
   "scripts": {
     "dev": "node api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
